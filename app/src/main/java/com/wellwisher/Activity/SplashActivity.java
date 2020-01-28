@@ -27,6 +27,10 @@ public class SplashActivity extends AppCompatActivity {
         password = prefs1.getString("passwordLogin", null);
         changeStatusBarColor();
         startTimer();
+        //Test git for wellwisher
+
+        String name="123";
+        String raja="124";
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
