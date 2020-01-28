@@ -31,6 +31,8 @@ public class SplashActivity extends AppCompatActivity {
 
         String name="123";
         String raja="124";
+
+        String jai="123456";
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
