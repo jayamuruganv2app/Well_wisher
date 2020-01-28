@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/sync"
+            android:title="Sync Contact" />
+        <item
+            android:id="@+id/nav_tools1"
+            android:icon="@drawable/settings"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_tools2"
+            android:icon="@drawable/feedback"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/nav_tools21"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_tools23"
+            android:icon="@drawable/message_templet"
+            android:title="View Massage Template" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/message_templet"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

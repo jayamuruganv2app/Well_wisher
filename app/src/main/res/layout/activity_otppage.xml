@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/side_nav_bar"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="80dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_btn"
+                    android:elevation="4dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/login_logo"/>
+
+                <RelativeLayout
+                    android:id="@+id/realtive"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/round_btn_empty"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:id="@+id/tessss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#00416A"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="VERIFY YOUR MOBILE NUMBER" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/tessss"
+                        android:paddingTop="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="OTP has been sent to your mobile number.Please enter below" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                           <!-- <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/phone"/>-->
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/editText1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/edittextview_otp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:drawableTint="#439EC6"
+                                    android:maxLength="6"
+                                    android:hint="Enter OTP code"
+                                    android:inputType="number" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:weightSum="10"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center">
+                      <TextView
+                          android:id="@+id/textview_resend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_rount_w_blue_otp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#FFFF"
+                            android:layout_weight="5"
+                            android:text="Resend OTP" />
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="5dp"/>
+                        <TextView
+                            android:id="@+id/textview_change_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_rount_w_blue_otp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textColor="#FFFF"
+                            android:layout_weight="5"
+                            android:text="Change Number" />
+                    </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_rount_w"
+                    android:elevation="14dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="-20dp">
+                    <TextView
+                        android:id="@+id/textview_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSubmitClicked"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="SUBMIT"
+                        android:padding="10dp"
+                        android:textColor="#00416A"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
